@@ -27,8 +27,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "API Documentation",
+          "href": "https://dashboard.launchmc.com/api/v1/docs-ui/",
           "icon": "book-open-cover"
         },
         {
@@ -37,8 +37,8 @@
           "icon": "discord"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "Website",
+          "href": "https://launchmc.com/",
           "icon": "newspaper"
         }
       ]
@@ -75,9 +75,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "discord": "https://discord.launchmc.com/"
     }
   }
 }
