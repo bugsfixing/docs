@@ -18,7 +18,8 @@
             "pages": [
               "index",
               "quickstart",
-              "player-flow"
+              "player-flow",
+              "fetching-player-ip"
             ]
           }
         ]
