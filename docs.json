@@ -19,7 +19,8 @@
               "index",
               "quickstart",
               "player-flow",
-              "fetching-player-ip"
+              "fetching-player-ip",
+              "widget-implementation"
             ]
           }
         ]
