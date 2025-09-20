@@ -1,0 +1,51 @@
+---
+title: "LaunchMC's JS widget implementation in your Website"
+description: "This guide will help you setup LaunchMC's JS widget to show latency and connection IP within your Web page."
+---
+
+## Basic Implementation
+
+Implement the widget by using the the code below in your site.
+
+```html
+<script src="https://widgets.launchmc.com/widget/latency.js" data-server="your-server.launchmc.com"> </script>
+```
+
+In **data-server** field change "your-server.launchmc.com" to yours.
+
+## Customize the widget.
+
+To customize the widget here are the following attributes.
+
+| **Attribute**          | **Default** | **Options**        | **Description**                                                                                    |
+| ---------------------- | ----------- | ------------------ | -------------------------------------------------------------------------------------------------- |
+| **data-server**        | _Required_  | Your server domain | The LaunchMC server domain to test (e.g., "[myserver.launchmc.com](http://myserver.launchmc.com)") |
+| **data-theme**         | auto        | dark, light, auto  | Widget color theme. Auto detects based on page background                                          |
+| **data-initial-count** | 3           | 1-10               | Number of locations to show initially                                                              |
+| **data-show-copy**     | true        | true, false        | Show copy-to-clipboard buttons for server IPs                                                      |
+| **data-compact**       | false       | true, false        | Use compact layout for smaller spaces                                                              |
+| **data-auto-refresh**  | 0 (off)     | Seconds            | Auto-refresh interval in seconds (0 = disabled)                                                    |
+
+<Note>
+  **CORS Notice:** The widget makes cross-origin requests to fetch latency data. Make sure your website allows this or use the iframe method for maximum compatibility.
+</Note>
+
+## Example code for JS widget customizations
+
+Below is an example on how to use the JS widget with the custom options. As mentioned above.
+
+```html
+<script src="https://widgets.launchmc.com/widget/latency.js" data-server="test.launchmc.com" data-theme="dark" data-initial-count="5" data-show-copy="true" data-compact="false" data-auto-refresh="300"> </script>
+```
+
+## Iframe Integration
+
+You can additoanlly use iframe to integrate the widget into your site. Using the code below.
+
+```html
+<iframe src="https://widgets.launchmc.com/widget/embed?server=your-server.launchmc.com" width="100%" height="400" frameborder="0"> </iframe>
+```
+
+<Note>
+  **Need help?** Join our [discord ](https://discord.launchmc.com)for support.
+</Note>
