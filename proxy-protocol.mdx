@@ -1,0 +1,59 @@
+---
+title: "Proxy-Protocol Implementation for Minecraft servers."
+description: "This guide will help you setup our local proxy to get real client IP's via ProxyProtocol."
+---
+
+## Downloading the files.
+
+To install our proxy, please download it using the following command:
+
+```shellscript
+wget https://launchmc.com/downloads/proxy-protocol-v0.1.zip
+```
+
+Or Using curl:
+
+```shellscript
+curl -O https://launchmc.com/downloads/proxy-protocol-v0.1.zip
+```
+
+After installing, unzip the files using:
+
+```shellscript
+sudo apt install unzip -y 
+unzip proxy-protocol-v0.1.zip
+```
+
+## Installation.
+
+After you the unzip the zip file, run the following command to go into the proxy folder:
+
+```shellscript
+cd proxy-protocol-v0.1
+```
+
+Running the installation script
+
+```shellscript
+bash install.sh --listenport 25565 --backendport 25567 --apikey YOUR_API_KEY --serverid YOUR_SERVER_ID
+```
+
+### Important information regarding configuration.
+
+The installation script asks you for the following fields:
+
+<Accordion title="Required fields" icon="sparkles">
+  1. ListenPort: The port on which the local proxy will listen for connections, This port will now be your connection port and should be used as destination port on LaunchMC.
+  2. BackendPort: The port on which your minecraft server is hosted on.
+  3. API-KEY: LaunchMC API key please find it in our dashboard. Ensure to use your server IP as the allowed IP.
+  4. ServerID: ServerID can be found on your overview tab as shown below.
+
+     ![Server ID Pn](/images/ServerID.png)
+</Accordion>
+
+\
+This will enable ProxyProtocol and then can be further used with your plugins and system to get the real IP of clients.
+
+<Note>
+  **Need help?** Join our [discord ](https://discord.launchmc.com)for support.
+</Note>
