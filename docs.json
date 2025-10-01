@@ -20,7 +20,8 @@
               "quickstart",
               "player-flow",
               "fetching-player-ip",
-              "widget-implementation"
+              "widget-implementation",
+              "proxy-protocol"
             ]
           }
         ]
