@@ -21,7 +21,8 @@
               "player-flow",
               "fetching-player-ip",
               "widget-implementation",
-              "proxy-protocol"
+              "proxy-protocol",
+              "origin-shield"
             ]
           }
         ]
