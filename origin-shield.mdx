@@ -1,0 +1,45 @@
+---
+description: "Origin Shield allows you to only allow traffic from LaunchMC Network, This means outside of LaunchMC, No can talk to your server. This strengthen security ensuring the traffic is only accepted via LaunchMC's protected network."
+title: "Origin Shield for Servers."
+---
+
+## Setup of Origin Shield.
+
+As server owner, you can install our 1 click shell script. Below you can install our script.
+
+```shellscript
+curl -O https://launchmc.com/downloads/lmc-shield.sh
+```
+
+### Installation
+
+After downloading the script, you can easily run it by following command:
+
+1: TCP
+
+```shellscript
+bash lmc-shield.sh install tcp 25565
+```
+
+2: UDP
+
+```shellscript
+bash lmc-shield.sh install udp 19132
+```
+
+3: BOTH ( Always works like)
+
+```shellscript
+bash lmc-shield.sh both <tcp_port> <udp_port>
+```
+
+Add your ports respectively according to your TCP/UDP port for Java and Bedrock.
+
+## Information
+
+1: The script automatically sets up new cronjob to update new ips.\
+2: The script install iptables-persistent, so the rules are not deleted upon reboot.
+
+<Note>
+  **Need help?** Join our [discord ](https://discord.launchmc.com)for support.
+</Note>
