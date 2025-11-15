@@ -22,7 +22,8 @@
               "fetching-player-ip",
               "widget-implementation",
               "proxy-protocol",
-              "origin-shield"
+              "origin-shield",
+              "custom-domain"
             ]
           }
         ]
